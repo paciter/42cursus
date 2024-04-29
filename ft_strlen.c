@@ -6,14 +6,15 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:29 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/25 12:14:24 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/29 12:49:44 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+size_t ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 	i=0;
 	while(str[i])
+		i++;
 	return(i);
 }

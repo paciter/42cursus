@@ -6,13 +6,13 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:02 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/25 12:14:24 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/29 18:15:42 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)
