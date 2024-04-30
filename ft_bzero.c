@@ -6,24 +6,21 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:51:10 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/29 13:30:34 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:52:49 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "test.h"
 
 void ft_bzero(void *b, size_t len)
 {
 	unsigned char *p;
-	size_t i;
+	size_t	i;
 
-	p = b;
+	p = (unsigned char *)b;
 	i = 0;
 	while (i < len)
 	{
-
-
-		
 		  p[i] = 0;
 		i++;
 	}
@@ -35,7 +32,7 @@ void ft_bzero (void *s, size_t n)
 	while (n--)
 		*ptr++ = '\0';
 }
-*/
+
 int main(void)
 {
 	char str[50];
@@ -44,4 +41,4 @@ int main(void)
 	ft_bzero(str, 2);
 	puts(str);
 	return (0);
-}
+}*/

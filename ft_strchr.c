@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:24:49 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/29 15:24:50 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:50:11 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ char *ft_strchr(const char *s, int c)
 		return((char *)&s[i]);
 	return(0);
 }
+/*
 int main() {
     const char *str = "Hello, world!";
     char *found = ft_strchr(str, 'o');
@@ -37,4 +38,4 @@ int main() {
     }
 
     return 0;
-}
+}*/

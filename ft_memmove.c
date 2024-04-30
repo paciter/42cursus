@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 12:52:45 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/29 19:04:31 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:50:07 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,32 +38,7 @@ void *memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
-{
-	size_t	i;
-	size_t	j;
-
-	i = 0;
-	j = 0;
-	if (needle == NULL || needle[0] == '\0')
-		return ((char *)haystack);
-	while (haystack[i] != '\0' && i < n)
-	{
-		if (haystack[i] == needle[j])
-		{
-			while (haystack[i + j] == needle[j] && i + j < n)
-			{
-				if (needle[j + 1] == '\0')
-					return ((char *)haystack + i);
-				j++;
-			}
-			j = 0;
-		}	
-		i++;
-	}
-	return (NULL);
-}
-
+/*
 int main() {
     char src[] = "Hello, world!";
     char dest[10];
@@ -76,4 +51,4 @@ int main() {
     printf("Destination: %s\n", dest);
 
     return 0;
-}
+}*/

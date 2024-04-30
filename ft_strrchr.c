@@ -17,6 +17,7 @@ char *ft_strrchr(const char *s, int c)
         return ((char *)&s[i]);
     return (0);
 }
+/*
 int main() {
     const char *str = "Hellq, world!";
     char *found = ft_strrchr(str, 'o');
@@ -28,4 +29,4 @@ int main() {
     }
 
     return 0;
-}
+}*/

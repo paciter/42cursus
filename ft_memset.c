@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 12:20:41 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/25 12:44:59 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:50:08 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void *ft_memset(void *ptn, int value, size_t count)
 		 *ptr++ = (char)value;
 	return ptn;
 }
-*/
+
 int main(void)
 {
 	char str[50];
@@ -42,3 +42,4 @@ int main(void)
 	puts(str);
 	return (0);
 }
+*/

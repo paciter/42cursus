@@ -6,13 +6,14 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:19 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/25 12:14:23 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:49:54 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "test.h"
+int	ft_atoi(const char *str)
 {
-	int	i;
+	size_t	i;
 	int	nbr;
 	int	sign;
 
@@ -21,7 +22,7 @@ int	ft_atoi(char *str)
 	sign = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || (str[i] == ' '))
 		i++;
-	while ((str[i] == '-') || (str[i] == '+'))
+	if((str[i] == '-') || (str[i] == '+'))
 	{
 		if (str[i] == '-')
 			sign = -sign;

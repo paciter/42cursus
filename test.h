@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   test.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rufaccia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:17:43 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/25 12:18:34 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:50:27 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 #define LIBFT_H
@@ -58,18 +59,5 @@ char *ft_strncat(char *dest, const char *src, size_t len);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strncpy(char *dest, const char *src, size_t len);
 int ft_strnequ(char const *s1, char const *s2, size_t n);
-char *ft_strnew(size_t size);
-char *ft_strnstr(const char *str, const char *to_find, size_t len);
-char *ft_strrchr(const char *s, int c);
-char **ft_strsplit(char const *s, char c);
-char *ft_strsub(char const *s, unsigned int start, size_t len);
-char *ft_strtrim(char const *s);
-int ft_tolower(int c);
-int ft_toupper(int c);
-void *ft_memalloc(size_t size);
-char *ft_strjoin(char const *s1, char const *s2);
-char *ft_strstr(const char *str, const char *to_find);
-int ft_isupper(int c);
-int ft_islower(int c);
 
 #endif

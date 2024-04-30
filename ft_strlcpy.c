@@ -38,7 +38,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 	return (i);
 }
-*/
+
 int main() {
     char src[] = "Hello, wor!";
     char dst[10]; // Destination buffer
@@ -49,4 +49,4 @@ int main() {
     // Printing the copied string and the length
     printf("Copied string: %s\n", dst);
     printf("Length of copied string: %zu\n", copied_length);
-}
+}*/
