@@ -6,11 +6,11 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 16:05:52 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:50:23 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:24:07 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -27,13 +27,13 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	
 	if (start < 0)
-		return NULL;
+		return (NULL);
 	
 	if (ft_strlen(s) - (size_t)start < len)
-		return NULL;
+		return (NULL);
 	
 	if ((size_t)start > strlen(s) - 1)
-		return NULL;
+		return (NULL);
 	
 	while (i < len)
 	{

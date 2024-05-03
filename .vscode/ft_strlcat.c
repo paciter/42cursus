@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 18:51:10 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:38 by rufaccia         ###   ########.fr       */
+/*   Created: 2024/04/29 11:34:04 by rufaccia          #+#    #+#             */
+/*   Updated: 2024/04/30 18:50:13 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void ft_bzero(void *b, size_t len)
+#include "test.h"
 {
-	unsigned char *p;
-	size_t	i;
-
-	p = (unsigned char *)b;
-	i = 0;
-	while (i < len)
+	size_t ft_strlcat(char *dest, const char *src, size_t size)
 	{
-		  p[i] = 0;
-		i++;
+		size_t i;
+		size_t j;
+		size_t dlen;
+		size_t slen;
+		
+		i = 0;
+		dlen = ft_strlen(dest);
+		slen = ft_strlen(src);
+		j = dlen;
+		
+		if (dlen < size - 1 && size > 0)
+		{
+			while (src[i] && dlen + i < size - 1)
+			{
+				dest[j] = src[i];
+				j++;
+				i++;
+			}
+			if (dlen >= size)
+				dlen = size;
+			return (dlen +slen);
+			}
 	}
 }
-/*
-void ft_bzero (void *s, size_t n)
-{
-	unsigned char *ptr = s;
-	while (n--)
-		*ptr++ = '\0';
-}
-
-int main(void)
-{
-	char str[50];
-	strcpy(str, "This is string.h library function");
-	puts(str);
-	ft_bzero(str, 2);
-	puts(str);
-	return (0);
-}*/

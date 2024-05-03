@@ -6,11 +6,11 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:19 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:49:54 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:23:36 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
 int	ft_atoi(const char *str)
 {
 	size_t	i;

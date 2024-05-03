@@ -6,9 +6,11 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 18:35:03 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:49:59 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:23:43 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

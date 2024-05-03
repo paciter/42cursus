@@ -6,11 +6,12 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:29 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:50:14 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:24:01 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+
 size_t ft_strlen(const char *str)
 {
 	size_t	i;

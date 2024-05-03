@@ -6,13 +6,12 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:24:49 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:50:11 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:23:57 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
-char *ft_strchr(const char *s, int c)
-{
+#include "libft.h"
+char *strchr(const char *s, int c){
 	size_t	i;
 
 	i = 0;

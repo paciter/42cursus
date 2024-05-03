@@ -6,11 +6,11 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 12:20:41 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/30 18:50:08 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:23:54 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
 
 
 void *ft_memset(void * ptn, int value, size_t count)

@@ -1,14 +1,15 @@
-#include "test.h"
+#include "libft.h"
 
 int ft_tolower (int c)
 {
     if(c >= 'A' && c <= 'Z')
 		return (c = c + 32);
 	else 
-		return (0);
+		return (c);
 }
+/*
 int main() {
-    char uppercase = 'A';
+    char uppercase = '7';
     char lowercase = ft_tolower(uppercase);
     
     printf("Uppercase: %c\n", uppercase);
@@ -16,3 +17,4 @@ int main() {
 
     return 0;
 }
+*/

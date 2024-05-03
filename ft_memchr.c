@@ -6,11 +6,12 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:12:17 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/04/29 17:44:33 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:23:44 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+
 void *ft_memchr(const void *s, int c, size_t n)
 {
 	size_t i;
