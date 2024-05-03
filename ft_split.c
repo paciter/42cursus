@@ -59,12 +59,12 @@ char **ft_split(char const *s, char c)
 	ptr = (char **)malloc(sizeof(char *) * (wordnumber + 1));
 	if (!ptr)
 		return (NULL);
-	while ( i < wordnumber)
+	while ( i < wordnumber && s[j])
 	{
 		while (s[j] == c)
 			j++;
 		lenmotact = lenword(&s[i], c);
-		ptr[i] = ft_substr(ptr[i], *s, lenmotact + 1);
+		ptr[i] = ft_substr(&s[j], 0, lenmotact);
         	if (!ptr[i])
             		return NULL;
         j += lenmotact;
