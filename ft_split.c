@@ -56,19 +56,18 @@ char **ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 
-	ptr = (char **)malloc(sizeof(char *) * wordnumber + 1);
+	ptr = (char **)malloc(sizeof(char *) * (wordnumber + 1));
 	if (!ptr)
 		return (NULL);
 	while ( i < wordnumber)
 	{
 		while (s[j] == c)
 			j++;
-		lenmotact = lenword(s, c);
-		ptr[i] = (char *)malloc(sizeof(char) * (lenmotact + 1));
-        if (!ptr[i])
-            return NULL;
-        ft_substr(ptr[i], *s, lenmotact + 1);
-        s += lenmotact;
+		lenmotact = lenword(&s[i], c);
+		ptr[i] = ft_substr(ptr[i], *s, lenmotact + 1);
+        	if (!ptr[i])
+            		return NULL;
+        j += lenmotact;
         i++;
     }
     ptr[i] = NULL;
