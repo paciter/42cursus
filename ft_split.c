@@ -19,7 +19,7 @@ size_t    count_words(char const *s, char c)
 
     words = 0;
     i = 0;
-    if (s == NULL || *s == '\0') // Vérification de la chaîne vide ou nulle
+    if (s == NULL || *s == '\0')
         return 0;
     while (s[i])
     {
