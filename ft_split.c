@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static size_t    count_words(char const *s, char c)
+size_t    count_words(char const *s, char c)
 {
     size_t    words;
     size_t    i;
@@ -29,8 +29,7 @@ static size_t    count_words(char const *s, char c)
     }
     return (words);
 }
-
- static size_t lenword(const char *s, char c)
+size_t lenword(const char *s, char c)
 {
     size_t    i;
     size_t    j;
@@ -53,11 +52,9 @@ char **ft_split(char const *s, char c)
     size_t        j;
     size_t    wordnumber;
     size_t    lenmotact;
-    
     wordnumber = count_words(s,c);
     i = 0;
     j = 0;
-
     ptr = (char **)malloc(sizeof(char *) * (wordnumber + 1));
     if (!ptr)
         return (NULL);
@@ -65,7 +62,7 @@ char **ft_split(char const *s, char c)
     {
         while (s[j] == c)
             j++;
-        lenmotact = lenword(s, c);
+        lenmotact = lenword(&s[j], c);
         ptr[i] = ft_substr(s, j, lenmotact);
             if (!ptr[i])
             {
