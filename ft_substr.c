@@ -38,41 +38,30 @@ char
     return (str);
 }
 /*
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char
+    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*ptr;
-	size_t	i;
+    size_t    i;
+    size_t    j;
+    char    *str;
+    
+    if (s == NULL || *s == '\0')
+        return NULL;
 
-	
-	i = 0;
-	ptr = (char *)malloc((len + 1) * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-	
-	if(!s)
-		return (NULL);
-	
-	if (start < 0)
-		return (NULL);
-	
-	if (ft_strlen(s) - (size_t)start < len)
-		return (NULL);
-	
-	if ((size_t)start > strlen(s) - 1)
-		return (NULL);
-	
-	while (i < len)
-	{
-		ptr[i] = s[(size_t)start  + i];
-		i++; 
-	}
-		ptr[i] = '\0';
-	
-	return (ptr);
-}
-*/
-        printf("La sous-chaîne est NULL.\n");
+    str = (char*)malloc(sizeof(*s) * (len + 1));
+    if (!str)
+        return (NULL);
+    i = start;
+    j = 0;
+    while (s[i] && j < len)
+    {
+       str[j] = s[i];
+       j++;
+       i++;
     }
 
-    return 0;
-}*/
+    str[j] = '\0';
+    return (str);
+}
+*/
+
