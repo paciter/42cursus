@@ -1,27 +1,4 @@
-#include "string.h"
-#include "stdio.h"
-#include "stdlib.h"
-#include "stddef.h"
-
-size_t    ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-    size_t i;
-    size_t src_len;
-
-    i = 0;
-    if (!dst || !src)
-        return (0);
-    src_len = strlen(src);
-    if (!dstsize)
-        return (src_len);
-    while (src[i] != '\0' && i < dstsize - 1)
-    {
-        dst[i] = src[i];
-        i++;
-    }
-    dst[i] = '\0';
-    return (src_len);
-}
+#include "libft.h"
 
 static size_t    count_words(char const *s, char c)
 {
@@ -91,28 +68,4 @@ char **ft_split(char const *s, char c)
     }
     ptr[i] = NULL;
     return ptr;
-}
-
-
-int main(void)
-{
-    char const *str = "Bonjour fonc tion ftsplit";
-    char **result = ft_split(str, ' ');
-
-    if (result)
-    {
-        // Affichage des mots séparés
-        for (int i = 0; result[i] != NULL; i++)
-        {
-            printf("%s\n", result[i]);
-            free(result[i]); // Libérer la mémoire allouée pour chaque mot
-        }
-        free(result); // Libérer la mémoire allouée pour le tableau de pointeurs
-    }
-    else
-    {
-        printf("Erreur: Échec de l'allocation mémoire.\n");
-    }
-
-    return 0;
 }
