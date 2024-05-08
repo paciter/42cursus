@@ -19,6 +19,13 @@
 #include <stdio.h>
 #include <stddef.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+
 int	ft_atoi(const char *str);
 void ft_bzero(void *b, size_t len);
 void * calloc( size_t elementCount, size_t elementSize );
