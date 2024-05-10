@@ -6,12 +6,12 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 12:52:45 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:49 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/10 13:24:14 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *memmove(void *dest, const void *src, size_t n)
+void *ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 	char	*tmpsrc;
@@ -28,13 +28,14 @@ void *memmove(void *dest, const void *src, size_t n)
 			i++;
 		}
 	}
-	else
+	else if (tmpdest > tmpsrc)
 	{
-		while (n > 0)
-		{
-			tmpdest[i - 1] = tmpsrc[i - 1];
-			n--;
-		}
+		i = n;
+    	while (i > 0)
+    	{
+        	tmpdest[i - 1] = tmpsrc[i - 1];
+        	i--;
+    	}
 	}
 	return (dest);
 }

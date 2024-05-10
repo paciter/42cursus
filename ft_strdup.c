@@ -6,13 +6,13 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 15:04:28 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:28:30 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/10 14:31:40 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- char *strdup(const char *s)
+ char *ft_strdup(const char *s)
  {
 	char	*ptr;
 	size_t i;

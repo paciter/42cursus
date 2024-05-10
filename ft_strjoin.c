@@ -6,21 +6,24 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 19:06:28 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:51:07 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/10 14:30:56 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
 char *ft_strjoin(char const *p1, char const *p2)
 {
+   if (!p1 || !p2)
+       return (NULL);
+   
+            
     size_t  i;
     size_t  j;
     size_t    lenglob;
     char  *ptr;
 
-    if (!p1 || !p2)
-            return NULL;
     j = 0;
     i = 0;
     lenglob = ft_strlen(p1) + ft_strlen(p2) + 1;
@@ -42,7 +45,7 @@ char *ft_strjoin(char const *p1, char const *p2)
     return (ptr);
 }
 
-
+/*
 int main(int argc ,char **argv) 
 {
     if (argc != 3)
@@ -68,4 +71,4 @@ int main(int argc ,char **argv)
     }
 
     return 0;
-}
+}*/

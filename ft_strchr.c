@@ -6,26 +6,50 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:24:49 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:57 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/10 14:05:06 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *strchr(const char *s, int c){
+char *ft_strchr(const char *s, int c)
+{
+    size_t i = 0;
+    
+    if (!s)
+        return NULL;
+    
+    while (s[i])
+    {
+        if (s[i] == c)
+            return ((char *)&s[i]); // Retourne un pointeur vers le caractère trouvé
+        i++;
+    }
+	if(c == '\0')
+		 return ((char *)&s[i]);
+    return (NULL);
+}
+
+/*
+char *ft_strchr(const char *s, int c)
+{
 	size_t	i;
 
 	i = 0;
+
+	if(!s)
+		return NULL;
+		
 	while (s[i])
 	{
 		if(s[i] == c)
-			return ((char *)&s[i]);
+			return((char *)&s[i]);
 		i++;
 	}
-	if (i == '\0')
+	if (s[i] == '\0')
 		return((char *)&s[i]);
 	return(0);
 }
-/*
+
 int main() {
     const char *str = "Hello, world!";
     char *found = ft_strchr(str, 'o');
