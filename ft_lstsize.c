@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
@@ -7,7 +7,7 @@ int	ft_lstsize(t_list *lst)
     i = 0;
     while(lst)
     {
-        lst = lst->next
+        lst = lst->next;
         i++;
     }
 

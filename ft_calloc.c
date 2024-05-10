@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void * calloc( size_t elementCount, size_t elementSize )
+void *ft_calloc( size_t elementCount, size_t elementSize )
 {
 	void	*ptn;
 
