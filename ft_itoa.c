@@ -40,7 +40,7 @@ char *ft_itoa(int n)
         str[0] = '0';
     else if (n == -2147483648)
     {
-        strcpy(str, "-2147483648");
+        str = ft_substr("-2147483648", 0, 11)
         return str;
     }
     else
