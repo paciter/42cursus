@@ -22,7 +22,7 @@ char
     if (s == NULL || *s == '\0')
         return NULL;
 
-    str = (char*)malloc(sizeof(*s) * (len + 1));
+    str = (char*)malloc(sizeof(char) * (len + 1));
     if (!str)
         return (NULL);
     i = start;
