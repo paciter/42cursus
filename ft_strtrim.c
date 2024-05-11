@@ -28,7 +28,7 @@ size_t  debut(const char *s1, const char *sep)
 	    
 	    i = strlen(s1);
 	
-	     while (s1[i] == *sep)
+		while (i > 0 && s1[i - 1] == *sep)
 	        i--;
 	    return (i);
 	}
