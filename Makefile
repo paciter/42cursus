@@ -29,6 +29,7 @@ SRCS = ft_bzero.c\
       ft_toupper.c\
       ft_split.c\
       ft_strmapi.c\
+      ft_striteri.c\
       ft_itoa.c\
       ft_lstadd_back.c\
       ft_lstadd_front.c\
