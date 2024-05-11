@@ -28,28 +28,9 @@ size_t  debut(const char *s1, const char *sep)
 	    
 	    i = strlen(s1);
 	
-	     while (i > 0 && s1[i - 1] == *sep)
+	     while (s1[i] == *sep)
 	        i--;
 	    return (i);
-	}
-	char *ft_substr(char const *s, unsigned int start, size_t len)
-	{
-	    size_t i;
-	    char  *ptr;
-	    
-	    i = 0;
-	    
-	    ptr = (char *)malloc((len + 1) * sizeof(char));
-	    if (ptr == NULL)
-	        return (NULL);
-	    while (i < len)
-	    {
-	        ptr[i] = s[start + i];
-	        i++;
-	    }
-	        ptr[i] = '\0';
-	    
-	    return (ptr);
 	}
 	
 	char *ft_strtrim(char const *s1, char const *set)
