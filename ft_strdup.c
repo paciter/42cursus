@@ -16,13 +16,16 @@
  {
 	char	*ptr;
 	size_t i;
-
-	i = - 1;
-	ptr = (char *)malloc(ft_strlen(s) * sizeof(char));
+	size_t size;
+	 
+	size = ft_strlen(s);
+	i = 0;
+	ptr = (char *)malloc((size + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
-	while (++i < ft_strlen(s))
+	while (i < size)
 		ptr[i] = s[i];
-	ptr[i] = '\n';
+	 	i++;
+	ptr[i] = '\0';
 	return(ptr);
  }
