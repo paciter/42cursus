@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 15:04:28 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/10 14:31:40 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:17:16 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@
 	if (ptr == NULL)
 		return (NULL);
 	while (i < size)
+	{
 		ptr[i] = s[i];
 	 	i++;
+	}
 	ptr[i] = '\0';
 	return(ptr);
  }

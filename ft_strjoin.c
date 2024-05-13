@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 19:06:28 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/10 14:30:56 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/13 18:51:18 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 
 char *ft_strjoin(char const *p1, char const *p2)
-{
-   if (!p1 || !p2)
-       return (NULL);
-   
-            
+{         
+    if (!p1  && !p2 )
+        return(ft_strdup(""));
+    if (!p1)
+        return(ft_strdup(p2));
+    if (!p2)
+        return(ft_strdup(p1));
+        
     size_t  i;
     size_t  j;
     size_t    lenglob;
@@ -27,6 +30,7 @@ char *ft_strjoin(char const *p1, char const *p2)
     j = 0;
     i = 0;
     lenglob = ft_strlen(p1) + ft_strlen(p2) + 1;
+    
     ptr =(char *)malloc((lenglob) * sizeof (char));
     if( !ptr)
         return (NULL);

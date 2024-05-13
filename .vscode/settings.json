@@ -2,6 +2,9 @@
 	"C_Cpp.errorSquiggles": "disabled",
 	"files.associations": {
 		"test.h": "c",
-		"libft.h": "c"
+		"libft.h": "c",
+		"stddef.h": "c",
+		"unistd.h": "c",
+		"string.h": "c"
 	}
 }
