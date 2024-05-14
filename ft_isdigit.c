@@ -6,15 +6,15 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:58:53 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 16:03:07 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:44:09 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-	if(c >= '0' && c <= '9')
-		return(1);
-	return(0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }

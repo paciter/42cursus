@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:55:38 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:40 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:44:16 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if((ft_isalpha(c) || ft_isdigit(c)))
+	if ((ft_isalpha(c) || ft_isdigit(c)))
 		return (1);
-	return(0);
+	return (0);
 }

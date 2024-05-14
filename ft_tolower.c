@@ -1,20 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/14 12:39:59 by rufaccia          #+#    #+#             */
+/*   Updated: 2024/05/14 12:40:00 by rufaccia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_tolower (int c)
+int	ft_tolower(int c)
 {
-    if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (c = c + 32);
-	else 
+	else
 		return (c);
 }
-/*
-int main() {
-    char uppercase = '7';
-    char lowercase = ft_tolower(uppercase);
-    
-    printf("Uppercase: %c\n", uppercase);
-    printf("Lowercase: %c\n", lowercase);
-
-    return 0;
-}
-*/

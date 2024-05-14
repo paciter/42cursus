@@ -6,15 +6,15 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:37:36 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:42 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:44:11 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 127)
-		return(1);
-	return(0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

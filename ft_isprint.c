@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 18:35:03 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:23:43 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:44:05 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return(1);
-	return(0);
+		return (1);
+	return (0);
 }

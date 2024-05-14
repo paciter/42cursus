@@ -6,78 +6,57 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:19:13 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/10 11:09:55 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 15:40:48 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int    count_words(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
-    size_t    words;
-    size_t    i;
+	size_t	count;
+	size_t	i;
 
-    words = 0;
-    i = 0;
-    if (s == NULL || *s == '\0')
-        return 0;
-    while (s[i])
-    {
-        if (s[i] != c && (s[i + 1] == c || s[i + 1] == '\0'))
-            words++;
-        i++;
-    }
-    return (words);
+	count = 0;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			count++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+		else
+			i++;
+	}
+	return (count);
 }
-static int  lenword(const char *s, char c)
+
+char	**ft_split(char const *s, char c)
 {
-    size_t    i;
-    size_t    j;
-    
-    i = 0;
-    j = 0;
-    while(s[i] == c)
-    i++;
-    while (s[i] != c && s[i] != '\0')
-    {
-        j++;
-        i++;
-    }
-    return (j);
-}
-char **ft_split(char const *s, char c)
-{
-    char    **ptr;
-    size_t        i;
-    size_t        j;
-    size_t    wordnumber;
-    size_t    lenmotact;
-    wordnumber = count_words(s,c);
-    i = 0;
-    j = 0;
-    ptr = (char **)malloc(sizeof(char *) * (wordnumber + 1));
-    if (!ptr)
-        return (NULL);
-    while ( i < wordnumber && s[j])
-    {
-        while (s[j] == c)
-            j++;
-        lenmotact = lenword(&s[j], c);
-        ptr[i] = ft_substr(s, j, lenmotact);
-            if (!ptr[i])
-            {
-            
-              while (i > 0)
-              {
-                free(ptr[i - 1]);
-                i--;
-              }
-              free(ptr);
-              return (NULL);
-            }
-        j += lenmotact;
-        i++;
-    }
-    ptr[i] = NULL;
-    return ptr;
+	char	**ptr;
+	size_t	i;
+	size_t	j;
+	size_t	wordcount;
+	size_t	wordlen;
+
+	wordcount = count_words(s, c);
+	ptr = (char **)malloc(sizeof(char *) * (wordcount + 1));
+	if (!ptr)
+		return (NULL);
+	i = 0;
+	j = 0;
+	while (i < wordcount)
+	{
+		while (s[j] && s[j] == c)
+			j++;
+		wordlen = 0;
+		while (s[j + wordlen] && s[j + wordlen] != c)
+			wordlen++;
+		ptr[i++] = ft_substr(s, j, wordlen);
+		j += wordlen;
+	}
+	ptr[i] = NULL;
+	return (ptr);
 }

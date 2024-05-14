@@ -6,12 +6,13 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:23:02 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/03 15:24:02 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:41:41 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
 	size_t	i;
 
