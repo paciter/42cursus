@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 16:05:52 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/14 12:33:51 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/15 12:46:12 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (start > strlen(s))
+	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (start + len > strlen(s))
+	if (start + len > ft_strlen(s))
 		len = strlen(s) - start;
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
