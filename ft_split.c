@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:19:13 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/14 15:43:06 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/15 10:28:35 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,8 @@ char	**ft_split(char const *s, char c)
 		wordlen = 0;
 		while (s[j + wordlen] && s[j + wordlen] != c)
 			wordlen++;
-		ptr[i++] = ft_substr(s, j, wordlen);
+		ptr[i] = ft_substr(s, j, wordlen);
+		i++;
 		j += wordlen;
 	}
 	ptr[i] = NULL;

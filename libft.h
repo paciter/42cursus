@@ -6,7 +6,7 @@
 /*   By: rufaccia <rufaccia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:17:43 by rufaccia          #+#    #+#             */
-/*   Updated: 2024/05/14 15:27:03 by rufaccia         ###   ########.fr       */
+/*   Updated: 2024/05/15 10:26:41 by rufaccia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char				*ft_strjoin(char const *p1, char const *p2);
 size_t				ft_strlcpy(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
-int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 char				*ft_strrchr(const char *s, int c);
@@ -62,7 +62,6 @@ int					ft_lstsize(t_list *lst);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_fd(char *s, int fd);
-void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 void				ft_putendl_fd(char *s, int fd);
 char				*ft_strchr(const char *s, int c);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
